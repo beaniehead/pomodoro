@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Pomodoro Clock</title>
+    <link  type="text/css" href="https://fonts.googleapis.com/css?family=Cabin|Cabin+Sketch|Cairo|Dosis|Josefin+Sans|PT+Sans|Titillium+Web" rel="stylesheet">
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+<link rel='stylesheet prefetch' href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"/></script>
+  <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,500" rel="stylesheet">
+  <title>Pomodoro Clock Timer</title>
+</head>
+<body>
+  <div id="main">
+    <div>
+      <h1 id="header">Pomodoro Timer</h1>
+    </div>
+       <div id="bothTimerControls">
+      <div id="editBreakWrap">
+        <div class="input-group">
+          <span class="input-group-addon label" id="breakControlsLabel">Break length</span>
+        </div>
+        <div class="input-group" id="breakUpDown">
+          <span class="input-group-addon" id="breakMinus"><i class="fa fa-minus"></i></span><span class="input-group-addon" id="breakMinutesNumber"></span> <span class="input-group-addon" id="breakPlus"><i class="fa fa-plus"></i></span>
+        </div>
+      </div>
+      <div id="editTimeWrap">
+        <div class="input-group">
+          <span class="input-group-addon label" id="timerControlsLabel">Work length</span>
+        </div>
+        <div class="input-group" id="timerUpDown">
+          <span class="input-group-addon" id="minus"><i class="fa fa-minus"></i></span><span class="input-group-addon" id="minutesNumber"></span> <span class="input-group-addon" id="plus"><i class="fa fa-plus"></i></span>
+        </div>
+      </div>
+    </div>
+    <div id="clock">
+      <span id="workSetup"></span><span id="clockText"><span id="innerHours"></span><span id="hoursSeparator">:</span><span id="innerMinutes"></span><span id="minutesSeparator">:</span><span id="innerSeconds"></span></span><span id="remainDisplay">/</span><span id="pausedText">Paused</span>
+      
+      <div id="breakInfo">
+        <span id="breakSetupText"></span><span id="breakSetUpNumbers"><span id="breakSetupHours"></span><span id="breakSetupMinutes"></span>:<span id="breakSetupSeconds"></span></span>
+      </div>
+    </div>
+    <div id="controls">
+      <button class="initial set btn" id="start">Start</button><button class="paused btn" id="pause">Pause</button><button class="btn" id="reset">Reset</button>
+    </div>
+    <div id="details">
+      <table class="table table-striped table-bordered table-sm" id="infoTable">
+        <thead>
+          <tr>
+            <td><strong>Work</strong><span id="workSummary"></span></td>
+            <td><strong>Break</strong><span id="breakSummary"></span></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="tableSub">
+            <td colspan="2">Sessions</td>
+          </tr>
+          <tr>
+            <td id="timerCount">0</td>
+            <td id="breakCount">0</td>
+          </tr>
+          <tr class="tableSub">
+            <td colspan="2">Time</td>
+          </tr>
+          <tr>
+            <td id="timerTime"><span id="timerTimeHours"></span><span id="timerTimeHoursSep"></span><span id="timerTimeMinutes">0</span>:<span id="timerTimeSeconds">00</span></td>
+            <td id="breakTime"><span id="breakTimeHours"></span><span id="breakTimeHoursSep"></span><span id="breakTimeMinutes">0</span>:<span id="breakTimeSeconds">00</span></td>
+          </tr>
+          <tr class="tableSub">
+            <td colspan="2">Total Time elapsed</td>
+          </tr>
+          <tr>
+            <td colspan="2"><span id="totalTimeHours"></span><span id="totalTimeHoursSep"></span><span id="totalTimeMinutes">0</span>:<span id="totalTimeSeconds">00</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="details">
+      <h6 class="settingsTitle">Toggle Clock Background</h6>
+      <div class="input-group backgroundControl">
+        <span class="input-group-addon lightOn" id="active">Light</span> <span class="input-group-addon darkOn" id="inactive">Dark</span>
+      </div><button class="btn btn-success notActive" id="maximiser" type="submit">Maximise</button> <button class="btn btn-success closer" type="submit">Close</button>
+    </div>
+    <div class="settings">
+      <i class="fa fa-cog settingsButton"></i>
+    </div>
+  </div>     
+</body>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

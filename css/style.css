@@ -1,0 +1,209 @@
+body {
+  font-family: 'Rajdhani', sans-serif;
+  transition: background-color 0.5s ease;
+  background-color:#ffffff;
+}
+#header {
+  font-size: 2.8em;
+}
+#main {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: background-color 0.5s ease;
+  background-color:#ffffff;
+}
+#header {
+  margin-top: 20px;
+}
+#sessionStatus {
+  visibility: hidden;
+}
+#controls {
+  margin: 10px;
+  padding: 10px;
+}
+.label {
+  margin-bottom: 10px;
+  width: 120px;
+}
+#minus, #plus {
+  cursor: pointer;
+  background-color: #CBCEDD;
+}
+#breakMinus, #breakPlus {
+  cursor: pointer;
+  background-color: #CBCEDD;
+}
+#bothTimerControls {
+  display: flex;
+  flex-flow: row wrap;
+  width: 400px;
+  justify-content: space-around;
+}
+#editTimeWrap {
+  padding: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: stretch;
+}
+#editBreakWrap {
+  padding: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: stretch;
+}
+#minutesNumber {
+  width: 100%;
+}
+#breakMinutesNumber {
+  width: 100%;
+}
+#clock {
+  height: 300px;
+  width: 300px;
+  background: url("https://s-media-cache-ak0.pinimg.com/736x/b6/dd/88/b6dd887b757aaa071d919752f4222ccd--my-spring-key-lime.jpg")
+    no-repeat;
+  background-position: 50% 320px;
+  border-radius: 50%;
+  border: 2px solid #999;
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  background-size: 320px 320px;
+  color: #444;
+}
+#workSetup {
+  font-size: 2.7em;
+}
+#clockText {
+  font-size: 3em;
+  line-height: 90%;
+}
+#hoursSeparator {
+  visibility: hidden;
+}
+#pausedText {
+  visibility: hidden;
+  font-size: 1.8em;
+  margin-top:3%;
+}
+#remainDisplay {
+  visibility: hidden;
+  font-size: 1.7em;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+#breakInfo {
+  font-size: 1.3em;
+  height:27%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content:flex-end;
+  align-items: center;
+ line-height:125%;
+  
+}
+#breakSetupText {
+  text-align: center;
+}
+
+#breakSetupNumbers {
+  color: red;
+}
+
+.btn {
+  margin: 10px 10px 0 10px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+#infoTable {
+  margin-top: 40px;
+  min-width: 320px;
+  text-align: center;
+  color: #444;
+  transition: opacity 0.5s ease 0.5s;
+  transition: z-index 0.5s ease 0.5s;
+}
+thead {
+  background-color: #000077;
+  color: #fff;
+}
+.settings {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 2;
+  font-size: 2.4em;
+  transition: opacity 0.5s ease 0.3s;
+  max-height: 200px;
+}
+.settingsButton {
+  padding-bottom: 10px;
+  cursor: pointer;
+  color: #444444;
+}
+.details {
+  color: #ededed;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  position: absolute;
+  top: 640px;
+  opacity: 0;
+  transition: opacity 0.5s;
+
+  font-size: 1.2em;
+  z-index: -1;
+  background-color: #222534;
+  max-height: 300px;
+  width: 350px;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #333;
+}
+.backgroundControl {
+  cursor: pointer;
+  text-align: center;
+  width: auto;
+  margin-bottom: 10px;
+}
+.lightOn {
+  background-color: gold;
+  color: #222534;
+  font-weight: bold;
+}
+.darkOn {
+  background-color: #CBCEDD;
+  color: #222534;
+}
+.closer, .closer:hover, .closer:focus, .closer:active {
+  color: #222534;
+  background-color: #CBCEDD;
+  border: 1px solid #cbcbcb;
+  cursor: pointer;
+  box-shadow: none;
+  font-size: 0.9em;
+  padding: 7px 10px 7px 10px;
+}
+#maximiser, #maximiser:hover, #maximiser:focus, #maximiser:active {
+  color: #222534;
+  background-color: #CBCEDD;
+  border: 1px solid #cbcbcb;
+  cursor: pointer;
+  box-shadow: none;
+  font-size: 1em;
+  padding: 7px 10px 7px 10px;
+  margin-bottom: 10px;
+}
